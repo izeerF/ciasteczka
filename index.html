@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="zaladowanie()">
+    <div class="boxx">
+    <div id="ciasteczka">
+        <h2>Powiadomienie o ciasteczkach</h2>
+      <p>Na tej stronie używamy plików cookie 
+          i podobnych technologii, 
+          które pomagają nam dowiedzieć 
+          się nieco o Tobie i o tym, 
+          jak korzystasz z naszej strony.</p>
+          <button onclick="zaakceptowaie()">Akceptuje</button>  
+    </div>
+</div>
+<script>
+    function zaakceptowaie() {
+        var ciasteczka = document.getElementById("ciasteczka");
+        ciasteczka.style.display = "none"
+        document.cookie = "Zaakceptowane";
+    }
+    function zaladowanie() {
+        if(document.cookie) {
+        ciasteczka.style.display = "none"
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+#ciasteczka {
+    background-color: lightgreen;
+    width: 700px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px none black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: green 5px 5px 3px;
+    left: 25%;
+    right: 50%;
+}
+#ciasteczka p {
+    margin: 30px;
+}
+button {
+    background-color: limegreen;
+    border: none;
+    box-shadow: darkgreen 2px 2px 3px;
+}
+button:hover {
+    background-color: greenyellow;
+    box-shadow: green 2px 2px 3px;
+}
+button:active {
+    background-color: darkgreen;
+}
+.boxx {
+position: fixed;
+left: 0%;
+right: 0%;
+margin-right: auto;
+margin-left: auto;
+bottom: 2%;
+}
